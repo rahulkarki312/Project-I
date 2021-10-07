@@ -1,0 +1,546 @@
+/* Color Theme:
+
+Xiketic: #03071E
+Dark Sienna: #370617
+Vermillion: #DC2F02
+Selective Yellow: #FFBA08
+
+
+Fonts:
+headings: poppins
+para: Glory
+*/
+
+
+h1, h2, h3, h4, h5{
+    font-family: 'poppins', 'open-sans';
+    
+}
+
+p{
+    font-family: 'Glory', 'open-sans';
+}
+
+/* pre-loader */
+
+#preloader{
+    background-color:#000000;
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+}
+
+#status{
+    background-image: url("../img/Eclipse-1s-200px.gif");
+    position: absolute;
+    width:190px;
+    height: 190px;
+    left:45%;
+    top:35%;
+    background-size: cover;
+}
+
+
+
+/* navbar */
+.navbar{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 50px;
+    background: none !important;
+}
+
+.navbar form input{
+    background: none ;
+}
+.navbar a, button{
+    color: #f1ece0 !important;
+}
+
+.dropdown-menu{
+    background: none ;
+    color: #f1ece0 !important;
+}
+
+.dropdown-menu .dropdown-item:hover{
+    color: #03071E !important;
+    background-color: #f1ece0 !important;
+}
+
+/* bg video */
+.bg-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+}
+
+.bg-video video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* home */
+#home{
+    height: 100%;
+}
+.space{
+    height: 25%;
+}
+
+#home img{
+    width: 290px;
+    height: 270px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#home .text{
+    margin: 50px 20px 0;
+    color: #f1ece0;
+}
+
+/* about us */
+
+
+.contain{
+    margin-bottom: 0;
+    
+}
+
+.bg{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 3px;
+    padding:0 ;
+    margin-bottom: 0;
+    /* height: 100%; */
+}
+
+.bg div{
+    height: 320px;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.img-1{
+    background-image: url(../img/galaxy.jpg); 
+    background-repeat: no-repeat;
+}
+.img-2{
+    background-image: url(../img/the\ forgetten\ rivalry.jpg);
+    background-position: 0 40px;
+    
+}
+
+
+.bg div:nth-child(1){
+    grid-column: 1/3;
+    padding-top: 10px;
+    
+}
+.bg div:nth-child(5){
+    grid-column: 1/4;
+}
+.bg p{
+    color: #fff;
+    font-size:20px;
+    /* line-height: 20px; */
+}
+.bg  h2{
+    color: #FFBA08; 
+    margin: 30px 0 35px 0;
+    
+}
+
+/* project starts */
+.project{
+    background-color: black;
+    height: 100%;
+}
+
+#projects p{
+    font-size: 20px;
+    color: #f1ece0;
+}
+
+#projects h1{
+    color: #fff;
+}
+
+#projects h3{
+   
+    font-size: 55px;
+    color: #FFBA08;
+   
+}
+
+.image-text{
+    text-align: center;
+}
+
+
+.project img{
+    height: 80%;
+    object-fit: cover;
+    object-position: 50px -60px;
+}
+
+.project-div{
+    height:100%;
+}
+.project .row{
+   height: 100%;
+   padding-top: 40px;
+
+}
+/* projects ends */
+
+/* teams */
+#teams h1{
+    color: #FFBA08;
+}
+#teams{
+    height: 100%;
+    position: relative;
+}
+
+#team-members{
+    position: relative;
+    height: 100%;
+}
+.member{
+    height: 35%;
+    width: 17%;
+    position: absolute;
+}
+#teams-bg{
+    background-image: url(../img/space\ in\ her\ head.jpg);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    filter: blur(1px); 
+    
+}
+#teams .member img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+#member-1{
+    top: 5%;
+    left: 2%;
+}
+#member-2{
+    top: 5%;
+    left: 20%;
+}
+#member-2 img{
+    object-position: 0 -30px;
+}
+#member-3{
+    bottom: 10%;
+    right: 20%;
+}
+#member-4{
+    bottom: 10%;
+    right: 2%;
+}
+
+.info{
+    height:100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: rgba(33, 34, 38, 0.6);
+     border-radius: 50%;
+    text-align: center;
+    transition: all linear 500ms;
+}
+
+.info ul{
+    list-style: none;
+    position: absolute;
+    bottom: 20px;
+    left: 6%;
+    color: #f1ece0;
+    font-size: 20px;
+    /* -webkit-text-stroke: 0.2px white; */
+}
+
+.member:hover .info{
+    opacity: 1;
+    border: 2px solid #FFBA08;
+}
+
+.member i{
+    font-size: 30px;
+    color: #f1ece0;
+}
+
+.fa-linkedin:hover{
+    color: #3C6D95 !important;
+}
+.fa-instagram:hover{
+    color: #DC3172 !important;
+}
+
+
+
+
+/* teams ends */
+
+/* services */
+
+#services{
+    position: relative;
+}
+#services h2{
+    z-index: 1;
+    font-weight: lighter;
+    position: absolute;
+    top: 280px;
+    left: 40px; 
+    transform: rotate(-90deg); 
+    color: aliceblue;
+}
+.likeBtn{
+    z-index: 1;
+    position: absolute;
+    bottom: 60px;
+    right: 200px;
+    background: none;
+    border: 0;
+}
+
+.fa-heart{
+   color: rgb(202, 40, 40);
+   font-size: 50px;
+}
+.service{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+.service-info{
+    position: absolute;
+    bottom: 30px;
+    left: 150px;
+    width: 400px;
+    text-align: center;
+    color: aliceblue;
+    /* filter: blur(9px); */
+    
+}
+
+
+.service-info h1{
+    font-weight: 100;
+    position: absolute;
+    bottom: 70px;
+    left: 150px;
+}
+.service-info ul{
+    filter: blur(9px);
+    transition: filter 600ms linear;
+}
+.service-info:hover ul{
+    filter: blur(0px);
+    /* transition: 600ms linear; */
+}
+.fa-facebook, .fa-instagram, .fa-linkedin, .fa-palette{
+    transition: all 1s;
+}
+
+
+.service-info:hover .fa-facebook{
+    color: #3C6D95 !important;
+    font-size: 30px;
+}
+.service-info:hover .fa-instagram{
+    color: #DC3172 !important;
+    font-size: 30px;
+}
+
+.service-info:hover .fa-palette{
+    background: -webkit-linear-gradient( #E8497F,#2F6FB6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.service-info ul{
+    list-style: none;
+}
+
+
+#services .carousel-control-prev-icon, .carousel-control-next-icon{
+        background-color: #370617;
+        border-radius: 50%;
+}
+
+
+
+.bg-vid video{
+    position: absolute;
+    z-index: -1;
+    height: 100% !important;
+    width: 100% !important;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    object-fit: fill;
+    transform: scale(1.3, 1.5);
+    
+}
+
+/* testimonials */
+
+#testimonials-div{
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+    background-image: url(../img/clients/clients-bg.jpg);
+    color: #f1ece0;
+}
+
+.testimonial{
+    padding-top: 20px;
+    height: 50%;
+    width: 30%;
+}
+
+#testimonials .h1{
+    position: absolute;
+    left: 45%;
+    color: #03071E;
+}
+
+#testimonials img{
+    /* height: 46%;
+    width: 35%;
+    border-radius: 50%; */
+    object-fit: cover;
+}
+
+#testimonial-1{
+    position: absolute;
+    left: 30px;
+    bottom: 45px;
+    display: inline;
+}
+#testimonial-2{
+    position: absolute;
+    left: 35%;
+    top:  80px;
+    
+}
+
+#testimonial-3{
+    position: absolute;
+    left: 68%;
+    bottom: 45px;
+}
+
+.circular-div {
+    position: relative;
+    left: 105px;
+    width: 180px;
+    height: 180px;
+    border-radius: 100%;
+  }
+  .smallCircle {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: -5.5px;
+    left: -5.5px;
+    border-radius: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .planet-img{
+      height: 100%;
+      object-fit: cover;
+      filter: blur(0.2px);
+  }
+
+  .circular-div:hover .smallCircle{
+    opacity: 1;
+    transform: rotate(-45deg);
+    animation: orbit 2s ease-in-out forwards;
+    transform-origin: 95.5px 95.5px;
+}
+  
+  @keyframes orbit {
+    0% {
+      transform: rotate(-45deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .circular-div img{
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+  }
+
+
+
+/* Contact us */
+
+#contact-div{
+    height: 100%;
+    background-color:#000000;
+    color: #f1ece0;
+    position: relative;
+}
+
+
+
+#contact h1{
+    font-weight: 600;
+    font-size: 70px;
+}
+
+#form-div{
+    width: 50%;
+    margin-top: 30px;
+}
+#contact button{
+    background-color: #03071E;
+    border: 0;
+}
+
+#contact button:hover{
+    background-color: #DC2F02;
+}
+
+iframe{
+    height: 180px;
+}
+
+#location-div{
+    position: absolute;
+    right: 10px;
+    top: 100px;
+    
+}
